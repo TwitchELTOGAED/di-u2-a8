@@ -1,4 +1,3 @@
-'use client'
 import { useState } from 'react';
 
 export default function TrafficLight() {
@@ -6,6 +5,7 @@ export default function TrafficLight() {
 
   function handleClick() {
     setWalk(!walk);
+    alert(walk ? 'Parar es lo siguiente' : 'Caminar es lo siguiente');
   }
 
   return (
